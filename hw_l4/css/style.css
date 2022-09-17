@@ -1,0 +1,58 @@
+@import "reset.css";
+@import "fonts.css";
+
+/* Використання Larsseit */
+.content-list > span {
+	font-family: "Larsseit";
+	font-weight: 700;
+}
+
+body > a {
+	font-family: "Larsseit";
+	font-weight: 500;
+}
+
+footer > span {
+	font-family: "Larsseit";
+	font-weight: 400;
+}
+/* ↑Використання Larsseit↑ */
+
+/* Використання Roboto */
+h1 {
+	font-family: "Roboto";
+	font-weight: 700;
+}
+span ~ ol {
+	font-family: "Roboto";
+	font-weight: 400;
+	color: goldenrod;
+}
+div.content-list {
+	color: blue;
+}
+/* ↑Використання Roboto↑ */
+
+/* ↓Основний шрифт статті "Lato"↓ */
+body {
+	font-family: "Lato";
+	font-weight: 400;
+}
+.subchapter > h3 {
+	font-weight: 900;
+}
+.chapter p {
+	font-weight: 700;
+}
+/* ↑Основний шрифт статті "Lato"↑ */
+
+/* Інші стилі статті */
+footer a {
+	color: red;
+}
+#chapter2 .subchapter p {
+	color: brown;
+}
+p + ul {
+	color: green;
+}
