@@ -1,0 +1,145 @@
+@import "reset.css";
+@import "fonts.css";
+
+/*----------------- Підключення шрифтів та основна типографіка----------------------- */
+
+h1 {
+	font-family: "Montserrat", serif;
+	font-weight: 900;
+	font-style: italic;
+	font-size: 48px;
+}
+
+h2 {
+	font-family: "Montserrat", serif;
+	font-weight: 700;
+	font-size: 36px;
+}
+span {
+	font-family: "DejaVu", serif;
+	font-weight: 700;
+	font-style: oblique;
+	font-size: 24px;
+}
+
+body {
+	font-family: "DejaVu", serif;
+	font-size: 20px;
+	line-height: 1.25;
+}
+
+/* Пропрацьовуємо усі властивості та їх значення з п'ятого уроку
+а також пріоритетність та комбінації селектеорів */
+
+/* font-size, font-style, font-weight пропрацював при підключенні шрифтів */
+
+/* -------- CSS-властивості тексту ------------ */
+
+.content-list {
+	color: #e23a3e;
+}
+
+.famous + ul {
+	color: rgba(0, 208, 132, 0.9);
+}
+
+body {
+	text-align: justify;
+}
+h1,
+h2 {
+	text-align: center;
+}
+footer {
+	text-align: right;
+}
+
+a {
+	text-decoration: underline;
+}
+h2 {
+	text-decoration: overline;
+}
+
+.line-through {
+	text-decoration: line-through;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+}
+
+body > span {
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+img ~ span {
+	text-transform: lowercase;
+}
+.famous + ul {
+	text-transform: capitalize;
+	line-height: 1.15;
+}
+
+p {
+	text-indent: 30px;
+}
+
+img ~ span {
+	letter-spacing: 20px;
+}
+
+.intro .nowrap {
+	white-space: nowrap;
+}
+mark {
+	word-spacing: 50px;
+}
+
+/*
+box-sizing встановлено в обнуленні 
+content-box - надіюсь Бог вбереже від використання
+*/
+
+/* далі знущання над об'єктами */
+.intro img {
+	padding: 1px 0 5px 45px;
+}
+
+h2 {
+	padding-top: 0.5%;
+	padding-right: 1%;
+	padding-bottom: 0.5%;
+	padding-left: 1%;
+}
+
+body {
+	margin-top: 0.5%;
+	margin-right: 1%;
+	margin-bottom: 0.5%;
+	margin-left: 1%;
+}
+
+img {
+	margin: 10px 150px;
+}
+
+h2 {
+	margin: 5px 0 15px;
+}
+
+section {
+	margin: 10px 2px 3px 4px;
+}
+
+span {
+	margin: 50px;
+	color: blueviolet;
+}
+
+#section5 img {
+	width: 300px;
+}

@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,900&display=swap");
+
+@font-face {
+	font-family: "DejaVu";
+	src: url("../fonts/DejaVuSansCondensed.woff2") format("woff2"),
+		url("../fonts/DejaVuSansCondensed.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "DejaVu";
+	src: url("../fonts/DejaVuSansCondensed-BoldOblique.woff2") format("woff2"),
+		url("../fonts/DejaVuSansCondensed-BoldOblique.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: oblique;
+}
