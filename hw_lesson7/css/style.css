@@ -1,0 +1,203 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+body {
+	font-family: "Lato", sans-serif;
+	color: #424551;
+	line-height: 1.6;
+}
+
+[class*="__container"] {
+	max-width: 810px;
+	margin: 0 auto;
+}
+
+.title {
+	margin: 30px 0 100px;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+	color: #1e212c;
+}
+
+.image {
+	margin-bottom: 60px;
+}
+
+.image-img {
+	display: block;
+	max-width: 100%;
+}
+.intro-text {
+	margin-bottom: 24px;
+}
+.intro-text__container {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #1e212c;
+}
+.first-text {
+	margin-bottom: 48px;
+}
+.first-text__container p {
+	margin-bottom: 40px;
+}
+.quotation {
+	margin-bottom: 48px;
+}
+.quotation__container {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #1e212c;
+	padding-left: 57px;
+}
+.single {
+	margin-bottom: 24px;
+}
+
+.list {
+	margin-bottom: 24px;
+}
+.list__container {
+	padding-left: 30px;
+}
+
+.list__container ul li {
+	margin-bottom: 4px;
+}
+
+.last-paragraph {
+	margin-bottom: 60px;
+}
+
+/* Проробляємо усі значення властивості background */
+
+.linethrough {
+	background-color: #1e212c;
+	color: #ffffff;
+	font-weight: 700;
+	text-align: center;
+}
+.linethrough ~ div {
+	margin: 10px;
+}
+
+.background-color {
+	background-color: rgb(242, 44, 81);
+}
+
+.background-image {
+	background-image: url("../img/image.jpg");
+}
+.background-image2 {
+	background-image: url("../img/image.jpg");
+	height: 200px;
+	width: 400px;
+}
+.background-image3 {
+	background-image: linear-gradient(
+		to bottom,
+		rgba(30, 87, 153, 1) 0%,
+		rgba(247, 249, 134, 1) 93%,
+		rgba(247, 249, 134, 1) 100%
+	);
+}
+.brick {
+	height: 400px;
+	width: 400px;
+	display: inline-block;
+	background-color: gray;
+}
+
+.background-repeat {
+	background-image: url("../img/200.png");
+}
+.background-repeat2 {
+	background-image: url("../img/200.png");
+	background-repeat: no-repeat;
+}
+.background-repeat3 {
+	background-image: url("../img/200.png");
+	background-repeat: repeat-x;
+}
+.background-repeat4 {
+	background-image: url("../img/200.png");
+	background-repeat: repeat-y;
+}
+
+.background-position {
+	background-image: url("../img/200.png");
+	background-repeat: no-repeat;
+	background-position: 170px 150px;
+}
+.background-position2 {
+	background-image: url("../img/200.png");
+	background-repeat: no-repeat;
+	background-position: 10% 30%;
+}
+.background-position3 {
+	background-image: url("../img/200.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.background-attachment {
+	background-image: url("../img/wallpaper.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.background-size {
+	background-image: url("../img/200.png");
+	background-repeat: no-repeat;
+	background-size: 250px 100px;
+}
+.background-size2 {
+	background-image: url("../img/200.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.background-size3 {
+	background-image: url("../img/200.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.background-size22 {
+	background-image: url("../img/image.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.background-size32 {
+	background-image: url("../img/image.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.background-size33 {
+	background-image: url("../img/image.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.background-size34 {
+	background-image: url("../img/image.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+.background {
+	width: 1000px;
+	height: 500px;
+	background: red url(../img/image.jpg) 37px 454px / contain no-repeat fixed;
+}
+
+.multi-background {
+	width: 1000px;
+	height: 1000px;
+	background: url(../img/wallpaper.jpg) no-repeat 10px 10px / 300px,
+		linear-gradient(90deg, rgba(210, 57, 75, 0.9) 0%, rgba(147, 86, 250, 0.3) 100%),
+		url(../img/image.jpg) no-repeat right bottom / 750px, url(../img/200.png) no-repeat center / cover;
+}
