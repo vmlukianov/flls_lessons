@@ -1,0 +1,74 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+	font-family: 'Lato', sans-serif;
+	line-height: 1.6;
+	color: #424551;
+}
+
+[class*="__container"] {
+	max-width: 810px;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+.article__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+	color: #1E212C;
+	margin-bottom: 92px;
+}
+
+.article__image {
+	margin-bottom: 60px;
+}
+
+.article__paragraphs_bold {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #1E212C;
+
+}
+
+.article__paragraphs p:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+.article__paragraphs {
+	margin-bottom: 24px;
+}
+
+.article__paragraphs_margin-for-quote {
+	margin-bottom: 48px;
+}
+
+.article__quote {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+	color: #1E212C;
+	padding-left: 58px;
+	margin-bottom: 48px;
+	background: url("../img/braces.svg") 0 0 no-repeat;
+}
+
+
+.article__list li {
+	margin-bottom: 4px;
+	padding-left: 32px;
+	background: url("../img/check.svg") 0 5px no-repeat;
+}
+
+.article__list {
+	margin-bottom: 24px;
+}
+
+.article__paragraphs_last-text {
+	margin-bottom: 60px;
+}
