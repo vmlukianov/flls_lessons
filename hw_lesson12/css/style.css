@@ -1,0 +1,278 @@
+@import "reset.css";
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.scene {
+	height: 100vh;
+}
+
+.sky {
+	min-height: 70%;
+	background: #004fe2;
+}
+
+.sky__sun {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #fbff03;
+	position: relative;
+	top: 30px;
+	left: 300px;
+
+}
+
+.sky__cloud {
+	width: 500px;
+	height: 200px;
+	border-radius: 33% 40% 44% 38% / 48% 47% 52% 50%;
+	background: linear-gradient(to bottom, rgba(122, 188, 255, 1) 0%, rgba(96, 171, 248, 1) 44%, rgba(64, 150, 238, 1) 100%);
+	position: relative;
+	left: 750px;
+}
+
+.ground {
+	min-height: 30%;
+	background: #498f07;
+	position: relative;
+}
+
+.bush {
+	width: 200px;
+	height: 200px;
+	border-radius: 45% 41% 33% 35% / 56% 59% 22% 20%;
+	background: #058d00;
+	position: relative;
+	left: 1060px;
+	top: -90px;
+
+}
+
+.regular-tree {
+	position: relative;
+	top: -245px;
+	left: 10px;
+}
+
+.regular-tree__trunk {
+	width: 60px;
+	height: 125px;
+	background: #533d01;
+	position: absolute;
+	left: 100px;
+	top: 90px;
+}
+
+.regular-tree__branches {
+	border-radius: 30% 30% 30% 30% / 45% 45% 50% 55%;
+	background: #2fb32b;
+	position: relative;
+	/*так можна було абсолютом, але було цікаво погратися =) */
+
+}
+
+.regular-tree__branches--top {
+	width: 225px;
+	height: 110px;
+
+	left: 30px;
+	top: -265px;
+}
+
+.regular-tree__branches--middle {
+	width: 300px;
+	height: 140px;
+
+	left: -10px;
+	top: -285px;
+}
+
+.regular-tree__branches--bottom {
+	width: 350px;
+	height: 175px;
+
+	left: -40px;
+	top: -320px;
+	z-index: 1;
+}
+
+.pine-tree {
+	position: relative;
+	top: -360px;
+}
+
+.pine-tree__trunk {
+	width: 50px;
+	height: 250px;
+	background: #856203;
+	position: absolute;
+
+	right: 150px;
+	bottom: 20px;
+	z-index: 2;
+}
+
+.pine-tree__branches {
+	width: 0;
+	height: 0;
+	position: absolute;
+}
+
+
+.pine-tree__branches--top {
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid #06612f;
+
+	right: 80px;
+	bottom: 440px;
+	z-index: 5;
+}
+
+.pine-tree__branches--middle {
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 250px solid #06612f;
+
+	right: 30px;
+	bottom: 315px;
+	z-index: 4;
+}
+
+.pine-tree__branches--bottom {
+	border-left: 200px solid transparent;
+	border-right: 200px solid transparent;
+	border-bottom: 300px solid #06612f;
+
+	right: -20px;
+	bottom: 185px;
+	z-index: 3;
+}
+
+
+.car {
+	position: fixed;
+	bottom: 180px;
+	left: 400px;
+}
+
+.wheels {
+	position: relative;
+	left: 28px;
+	bottom: -78px;
+}
+
+.wheels__front {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #000000;
+	position: relative;
+	top: 75px;
+}
+
+.wheels__back {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #000000;
+	position: relative;
+	left: 167px;
+	bottom: 3px;
+}
+
+
+.car__body {
+	width: 300px;
+	height: 85px;
+	background: #ffffff;
+	border: 1px solid #000;
+
+	position: absolute;
+	bottom: 0px;
+	z-index: 1;
+}
+
+.car__front-light {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #fbff03;
+
+	position: relative;
+	left: -10px;
+	bottom: 25px;
+}
+
+.car__rear-light {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #ff2003;
+
+	position: relative;
+	left: 290px;
+	bottom: 45px;
+}
+
+.cabin {
+	width: 240px;
+	height: 120px;
+	background: #ffffff;
+	position: absolute;
+	left: 30px;
+	bottom: 85px;
+}
+
+.cabin__windscreen {
+	width: 20px;
+	height: 100px;
+	background: #178caf;
+	position: relative;
+	top: 12px;
+}
+
+/*** TRANSRORM ***/
+.pine-tree:hover .pine-tree__branches--top {
+	transform: translate(0, -60%);
+}
+
+.pine-tree:hover .pine-tree__branches--middle {
+	transform: scale(1.35);
+}
+
+.pine-tree:hover .pine-tree__branches--bottom {
+	transform: rotate(180deg);
+}
+
+.sky__cloud:hover {
+	transform: skew(18deg, -33deg);
+	transform-origin: left bottom;
+}
+
+.car {
+	perspective: 100px;
+	perspective-origin: 32px 62px;
+	transform-style: preserve-3d;
+}
+
+.wheels:hover {
+	transform: rotateX(40deg);
+}
+
+.car:hover .car__front-light {
+	transform: translate3d(6px, -30px, 75px);
+}
+
+.car__rear-light:hover {
+	transform: scale3d(10, 10, 10);
+}
+
+.regular-tree__branches:hover {
+	transform: rotate3d(-4, 15, -13, 54deg);
+	border: 1px solid #000;
+}
