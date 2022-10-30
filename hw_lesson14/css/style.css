@@ -74,6 +74,7 @@
 .flex-container--taxi {
 	height: 140px;
 	background: #fffb00;
+	justify-content: center;
 }
 
 .flex-container__flex-element--taxi-item {
