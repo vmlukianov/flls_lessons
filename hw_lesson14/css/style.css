@@ -1,0 +1,247 @@
+@import "reset.css";
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper>main {
+	flex-grow: 1;
+}
+
+/* === */
+
+.main>div:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.main {
+	padding: 5px;
+}
+
+.flex-container {
+	border: 5px solid #ff0000;
+	background: #0077ff;
+	display: flex;
+}
+
+.flex-container__flex-element {
+	border: 5px solid #000000;
+	background: #fffb00;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	font-size: 36px;
+	text-align: center;
+	width: 200px;
+}
+
+/* flex-wrap */
+.flex-container--ex1 {
+	flex-wrap: wrap;
+}
+
+/* justify-content */
+.flex-container--ex2 {
+	justify-content: space-evenly;
+}
+
+/* align-items */
+.flex-container--ex3 {
+	align-items: center;
+	height: 100px;
+}
+
+/* flex-direction */
+.flex-container--ex4 {
+	flex-direction: column-reverse;
+	flex-wrap: wrap;
+	height: 140px;
+}
+
+/* align-self */
+.flex-container--ex5 {
+	height: 140px;
+	align-items: flex-start;
+}
+
+.flex-container__flex-element--ex5-item:nth-child(2) {
+	align-self: flex-end;
+}
+
+.flex-container--taxi {
+	height: 140px;
+	background: #fffb00;
+}
+
+.flex-container__flex-element--taxi-item {
+	height: 50%;
+	background: #000;
+	min-width: 100px;
+}
+
+.flex-container__flex-element--taxi-item:nth-child(even) {
+	align-self: flex-start;
+}
+
+.flex-container__flex-element--taxi-item:nth-child(odd) {
+	align-self: flex-end;
+}
+
+/* flex: grow shrink basis */
+.flex-container__flex-element--ex6-item {
+	flex: 0 0 auto;
+}
+
+.flex-container__flex-element--ex6-item:nth-child(2) {
+	flex: 1 0 auto;
+}
+
+/* gap */
+.flex-container--ex7 {
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* Фішка "MG- PD+" */
+.row {
+	display: flex;
+	margin: 0 -7.5px;
+	flex-wrap: wrap;
+}
+
+.column {
+	/* border: 1px solid #000; */
+	/* background: #000; */
+	padding: 0 7.5px;
+	flex: 0 1 25%;
+
+}
+
+.column-content {
+	background: #777fff;
+	text-align: center;
+	color: #fff;
+}
+
+/* === */
+
+/* order */
+.flex-container__flex-element--ex8-item:nth-child(1) {
+	order: 2;
+}
+
+.flex-container__flex-element--ex8-item:nth-child(2) {
+	order: 3;
+}
+
+.flex-container__flex-element--ex8-item:nth-child(3) {
+	order: 1;
+}
+
+/* Приклад з текстом і однаковим відступом */
+.block {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+	border: 1px solid #000;
+}
+
+/* === */
+
+/* Приклад з картками і прибиттям кнопки донизу */
+
+.cards {
+	display: flex;
+	margin: 0 -20px;
+}
+
+.cards__column {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+	flex: 0 1 33.333%;
+	background: #696565;
+	padding: 5px 30px;
+}
+
+.column-card__pic img {
+	max-width: 100%;
+}
+
+.column-card__pic {
+	align-self: center;
+}
+
+.column-card__text {
+	flex-grow: 1;
+}
+
+.column-card__btn {
+	background: #000000;
+	color: #ff0000;
+}
+
+/* === */
+.header,
+.footer {
+	background: #000;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 28px;
+	font-weight: 900;
+	padding: 18px;
+}
+
+/* Приклад з посиланням */
+.link-with-pseudo {
+	display: inline-flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.link-with-pseudo::before {
+	content: "";
+	flex: 0 0 20px;
+	height: 20px;
+	width: 20px;
+	background: #ff0000;
+}
+
+/* === */
+
+/* Приклад зі стисненням ширини */
+.ico-text {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.ico-text__ico {
+	/* width: 50px; */
+	flex: 0 0 50px;
+	height: 50px;
+	background: #000;
+}
+
+/* === */
+
+/* Приклад з float */
+.float-img__img {
+	float: left;
+	margin-right: 15px;
+}
+
+.float-img__img img {
+	max-width: 100%;
+}
+
+
+
+/* === */
